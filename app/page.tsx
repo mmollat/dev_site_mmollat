@@ -36,7 +36,7 @@ const cards = [
     "Every detail matters. See how your custom rod comes to life.",
     "Learn More",
     "/images/build-process-01.png",
-    "#",
+    "/build-process",
   ],
   [
     "Gallery",
