@@ -22,7 +22,7 @@ const steps = [
     title: "Thread Work & Details",
     text:
       "Thread wraps are applied by hand with careful attention to symmetry, spacing, color, and finish. Every detail contributes to both performance and presentation.",
-    image: "/images/build-process-01.png",
+    image: "/images/thread.png",
   },
 
   {
