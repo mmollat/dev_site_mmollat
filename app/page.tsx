@@ -28,25 +28,25 @@ const cards = [
     title: "Custom Rods",
     text: "Explore our lineup of custom rods built for any species and technique.",
     button: "View Rods",
-    image: "/images/rod-closeup-02.png”,
+    image: "/images/rod-closeup-02.png",
   },
   {
     title: "The Build Process",
     text: "Every detail matters. See how your custom rod comes to life.",
     button: "Learn More",
-    image: "/images/build-process-01.png”,
+    image: "/images/build-process-01.png",
   },
   {
     title: "Gallery",
     text: "See our rods in action and the craftsmanship behind every build.",
     button: "View Gallery",
-    image: "/images/angler-lifestyle.png”,
+    image: "/images/angler-lifestyle.png",
   },
   {
     title: "About Ibarra",
     text: "Built on passion, precision, and a love for fishing. Learn our story.",
     button: "Our Story",
-    image: "/images/butt-cap-detail.png”,
+    image: "/images/butt-cap-detail.png",
   },
 ];
 
@@ -86,7 +86,7 @@ export default function Home() {
 
       <section className="relative min-h-[640px] overflow-hidden pt-28">
         <Image
-          src="/images/hero-banner.png”
+          src="/images/hero-banner.png"
           alt="Custom fishing rod on the ocean"
           fill
           priority
