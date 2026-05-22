@@ -1,0 +1,325 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --surface: #0b0b0b;
+  --surface-2: #101010;
+
+  --foreground: #f7f4ee;
+
+  --bronze: #c99743;
+  --bronze-light: #d9ad5a;
+  --bronze-dark: #92692c;
+
+  --muted: #a7a097;
+
+  --border: rgba(255, 255, 255, 0.08);
+
+  --shadow-soft:
+    0 10px 30px rgba(0, 0, 0, 0.35);
+
+  --shadow-glow:
+    0 0 30px rgba(201, 151, 67, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  background: var(--background);
+
+  color: var(--foreground);
+
+  overflow-x: hidden;
+
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(201, 151, 67, 0.03),
+      transparent 45%
+    ),
+    var(--background);
+
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+
+  text-decoration: none;
+
+  transition:
+    color 180ms ease,
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+button {
+  font: inherit;
+
+  cursor: pointer;
+
+  transition:
+    all 180ms ease;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: var(--bronze);
+  color: black;
+}
+
+/* ---------------- */
+/* Scrollbar */
+/* ---------------- */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060606;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(201, 151, 67, 0.55);
+
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(217, 173, 90, 0.85);
+}
+
+/* ---------------- */
+/* Typography */
+/* ---------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+
+  line-height: 1;
+
+  letter-spacing: -0.03em;
+
+  text-wrap: balance;
+}
+
+p {
+  margin: 0;
+
+  line-height: 1.7;
+
+  color: var(--muted);
+
+  text-wrap: pretty;
+}
+
+/* ---------------- */
+/* Containers */
+/* ---------------- */
+
+.container {
+  width: 100%;
+
+  max-width: 1280px;
+
+  margin-inline: auto;
+
+  padding-inline: 24px;
+}
+
+/* ---------------- */
+/* Buttons */
+/* ---------------- */
+
+.btn-primary {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 52px;
+
+  padding: 0 32px;
+
+  background: var(--bronze);
+
+  color: black;
+
+  font-size: 13px;
+
+  font-weight: 900;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.18em;
+
+  border: none;
+
+  transition:
+    transform .18s ease,
+    background .18s ease;
+
+  box-shadow:
+    0 12px 30px rgba(201, 151, 67, .18);
+}
+
+.btn-primary:hover {
+  background: var(--bronze-light);
+
+  transform:
+    translateY(-2px);
+}
+
+.btn-outline {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 52px;
+
+  padding: 0 32px;
+
+  border:
+    1px solid rgba(201, 151, 67, .6);
+
+  color: var(--foreground);
+
+  font-size: 13px;
+
+  font-weight: 900;
+
+  text-transform: uppercase;
+
+  letter-spacing: .18em;
+}
+
+.btn-outline:hover {
+  background: var(--bronze);
+
+  color: black;
+}
+
+/* ---------------- */
+/* Cards */
+/* ---------------- */
+
+.panel {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.02),
+      rgba(255,255,255,.01)
+    );
+
+  border:
+    1px solid var(--border);
+
+  box-shadow:
+    var(--shadow-soft);
+}
+
+.image-overlay {
+  position: relative;
+}
+
+.image-overlay::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,.75),
+      rgba(0,0,0,.15)
+    );
+
+  pointer-events: none;
+}
+
+/* ---------------- */
+/* Animation */
+/* ---------------- */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+.fade-up {
+  animation:
+    fadeUp .5s ease;
+}
+
+/* ---------------- */
+/* Focus */
+/* ---------------- */
+
+:focus-visible {
+  outline:
+    2px solid var(--bronze);
+
+  outline-offset: 4px;
+}
