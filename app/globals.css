@@ -413,28 +413,14 @@ a {
 }
 
 .rodsHero {
-  position: relative;
-  min-height: 760px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background-image: url("/images/rods-hero-banner.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center 105px;
-  background-color: 050505;
+  padding-top: 105px;
+  background: #050505;
 }
 
-.rodsHeroImage {
-  display: none;
-}
-
-.rodsOverlay {
-  display: none;
-}
-
-.rodsHeroContent {
-  display: none;
+.rodsHeroBanner {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .rodsCategories {
@@ -501,65 +487,53 @@ a {
   letter-spacing: .14em;
 }
 
-.buildOptions {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 70px;
-  align-items: center;
-  padding: 100px 70px;
+.rodsOptionsPanel {
+  min-height: 520px;
+  background-image: url("/images/rods-options.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.buildOptions span {
-  color: #c99743;
-  font-weight: 900;
-  letter-spacing: .22em;
-  text-transform: uppercase;
+.rodsCtaPanel {
+  min-height: 420px;
+  background-image: url("/images/rods-cta.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.buildOptions h2 {
-  font-family: Oswald;
-  font-size: 56px;
-  margin-top: 18px;
-  text-transform: uppercase;
-}
+@media (max-width:900px) {
+  .rodsHero {
+    padding-top: 0;
+  }
 
-.optionsGrid {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 16px;
-}
+  .rodsCategories,
+  .whyGrid {
+    grid-template-columns: 1fr;
+  }
 
-.optionsGrid div {
-  background: #111;
-  border: 1px solid rgba(255,255,255,.12);
-  padding: 20px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: rgba(255,255,255,.82);
-}
+  .rodCategory {
+    border-right: none;
+  }
 
-.rodsCTA {
-  text-align: center;
-  padding: 110px 24px;
-  background: #070707;
-}
+  .rodsWhy {
+    padding: 60px 24px;
+  }
 
-.rodsCTA h2 {
-  font-family: Oswald;
-  font-size: 60px;
-  line-height: 1.04;
-  text-transform: uppercase;
-}
+  .rodsWhy h2 {
+    font-size: 38px;
+  }
 
-.rodsCTA a {
-  display: inline-block;
-  margin-top: 32px;
-  background: #c99743;
-  color: black;
-  padding: 18px 32px;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: .16em;
+  .rodsOptionsPanel {
+    min-height: 360px;
+    background-size: cover;
+  }
+
+  .rodsCtaPanel {
+    min-height: 300px;
+    background-size: cover;
+  }
 }
 
 /* MOBILE */
