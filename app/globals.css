@@ -509,9 +509,9 @@ a {
 }
 
 .panelText h2 {
-  margin: 0 0 24px;
+  margin: 0 0 20px;
   font-family: Oswald;
-  font-size: 72px;
+  font-size: 56px;
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
@@ -520,17 +520,17 @@ a {
 
 .panelText p {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 920px;
   font-family: Oswald;
-  font-size: 28px;
-  line-height: 1.8;
+  font-size: 20px;
+  line-height: 1.7;
   text-transform: uppercase;
   text-align: center;
   color: rgba(255, 255, 255, 0.82);
 }
 
 .panelText p.cta {
-  font-size: 42px;
+  font-size: 34px;
   color: #c99743;
 }
 
