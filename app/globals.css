@@ -593,3 +593,282 @@ display:none;
 }
 
 }
+/* =========================
+   RODS PAGE
+========================= */
+
+.rodsPage {
+  background: #050505;
+}
+
+.rodsHero {
+  position: relative;
+
+  min-height: 650px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 150px 70px 80px;
+
+  overflow: hidden;
+}
+
+.rodsHeroImage {
+  object-fit: cover;
+
+  z-index: 0;
+}
+
+.rodsOverlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.92),
+      rgba(0,0,0,.55),
+      rgba(0,0,0,.18)
+    );
+}
+
+.rodsHeroContent {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 700px;
+}
+
+.rodsHeroContent span,
+.buildOptions span {
+  color: #c99743;
+
+  font-weight: 900;
+
+  letter-spacing: .22em;
+
+  text-transform: uppercase;
+}
+
+.rodsHeroContent h1 {
+  font-family: Oswald;
+
+  font-size: 74px;
+
+  line-height: 1.02;
+
+  margin: 18px 0 26px;
+
+  text-transform: uppercase;
+}
+
+.rodsHeroContent p {
+  max-width: 520px;
+
+  color: rgba(255,255,255,.72);
+
+  font-size: 20px;
+
+  line-height: 1.7;
+}
+
+.rodsHeroContent a,
+.rodsCTA a {
+  display: inline-block;
+
+  margin-top: 32px;
+
+  background: #c99743;
+
+  color: black;
+
+  padding: 18px 32px;
+
+  font-weight: 900;
+
+  text-transform: uppercase;
+
+  letter-spacing: .16em;
+}
+
+.rodsCategories {
+  display: grid;
+
+  grid-template-columns: repeat(4,1fr);
+
+  background: #0b0b0b;
+}
+
+.rodCategory {
+  border-right: 1px solid rgba(255,255,255,.12);
+}
+
+.rodCategory:last-child {
+  border-right: none;
+}
+
+.rodCategoryImage {
+  min-height: 300px;
+
+  background-size: cover;
+
+  background-position: center;
+}
+
+.rodCategoryContent {
+  padding: 36px;
+}
+
+.rodCategoryContent h2 {
+  margin: 0 0 14px;
+
+  font-family: Oswald;
+
+  text-transform: uppercase;
+
+  letter-spacing: .08em;
+}
+
+.rodCategoryContent p {
+  color: rgba(255,255,255,.68);
+
+  line-height: 1.6;
+}
+
+.rodsWhy {
+  padding: 90px 70px;
+
+  background: #070707;
+
+  text-align: center;
+}
+
+.rodsWhy h2 {
+  font-family: Oswald;
+
+  font-size: 54px;
+
+  margin-bottom: 48px;
+
+  text-transform: uppercase;
+}
+
+.whyGrid {
+  display: grid;
+
+  grid-template-columns: repeat(4,1fr);
+
+  gap: 18px;
+}
+
+.whyCard {
+  padding: 36px 24px;
+
+  border: 1px solid rgba(201,151,67,.35);
+
+  color: #c99743;
+
+  font-weight: 900;
+
+  text-transform: uppercase;
+
+  letter-spacing: .14em;
+}
+
+.buildOptions {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+
+  align-items: center;
+
+  padding: 100px 70px;
+}
+
+.buildOptions h2 {
+  font-family: Oswald;
+
+  font-size: 56px;
+
+  margin-top: 18px;
+
+  text-transform: uppercase;
+}
+
+.optionsGrid {
+  display: grid;
+
+  grid-template-columns: repeat(2,1fr);
+
+  gap: 16px;
+}
+
+.optionsGrid div {
+  background: #111;
+
+  border: 1px solid rgba(255,255,255,.12);
+
+  padding: 20px;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  color: rgba(255,255,255,.82);
+}
+
+.rodsCTA {
+  text-align: center;
+
+  padding: 110px 24px;
+
+  background: #070707;
+}
+
+.rodsCTA h2 {
+  font-family: Oswald;
+
+  font-size: 60px;
+
+  line-height: 1.04;
+
+  text-transform: uppercase;
+}
+
+@media (max-width:900px){
+
+.rodsHero{
+padding:110px 24px 70px;
+min-height:540px;
+}
+
+.rodsHeroContent h1{
+font-size:44px;
+}
+
+.rodsCategories,
+.whyGrid,
+.buildOptions{
+grid-template-columns:1fr;
+}
+
+.rodsWhy,
+.buildOptions{
+padding:60px 24px;
+}
+
+.rodsWhy h2,
+.buildOptions h2,
+.rodsCTA h2{
+font-size:38px;
+}
+
+}
