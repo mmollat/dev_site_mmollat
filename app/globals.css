@@ -463,6 +463,8 @@ a {
   text-transform: uppercase;
 }
 
+/* BOTTOM PANELS */
+
 .rodsBottomPanels {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -472,15 +474,12 @@ a {
 .rodsOptionsPanel,
 .rodsCtaPanel {
   position: relative;
-  min-height: 540px;
-  background-size: cover;
-  background-position: center;
+  min-height: 640px;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 64px 40px;
+  background-size: 100% auto;
+  background-position: top center;
   overflow: hidden;
+  background-color: #050505;
 }
 
 .rodsOptionsPanel {
@@ -495,43 +494,40 @@ a {
 .rodsCtaPanel::after {
   content: "";
   position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.92) 0%,
-    rgba(0, 0, 0, 0.76) 26%,
-    rgba(0, 0, 0, 0.2) 62%,
-    rgba(0, 0, 0, 0.05) 100%
-  );
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 190px;
+  background: #050505;
+  z-index: 1;
 }
 
 .rodsOptionsPanel::before,
 .rodsCtaPanel::before {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  bottom: 34px;
+  transform: translateX(-50%);
   z-index: 2;
+  width: 92%;
   color: white;
   font-family: Oswald;
   text-align: center;
   text-transform: uppercase;
   white-space: pre-line;
-  line-height: 1.25;
+  line-height: 1.35;
 }
 
 .rodsOptionsPanel::before {
   content: "CUSTOMIZE EVERY DETAIL\A\A ROD TYPE  •  LENGTH  •  POWER  •  ACTION  •  GRIP STYLE  •  THREAD COLORS  •  PERSONALIZATION  •  TARGET SPECIES";
-  font-size: 48px;
+  font-size: 44px;
   letter-spacing: 0.04em;
 }
 
 .rodsCtaPanel::before {
   content: "READY TO BUILD YOUR ROD?\A\A START YOUR BUILD  →";
-  font-size: 48px;
+  font-size: 44px;
   letter-spacing: 0.08em;
-}
-
-.rodsOptionsPanel::first-line,
-.rodsCtaPanel::first-line {
-  color: white;
 }
 
 /* MOBILE */
@@ -607,13 +603,20 @@ a {
 
   .rodsOptionsPanel,
   .rodsCtaPanel {
-    min-height: 320px;
-    padding: 44px 24px;
-    background-position: center;
+    min-height: 420px;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .rodsOptionsPanel::after,
+  .rodsCtaPanel::after {
+    height: 130px;
   }
 
   .rodsOptionsPanel::before,
   .rodsCtaPanel::before {
-    font-size: 32px;
+    bottom: 24px;
+    font-size: 26px;
+    width: 94%;
   }
 }
