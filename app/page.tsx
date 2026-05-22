@@ -43,7 +43,13 @@ export default function Home() {
       <section className="features">
         {features.map(([icon, title, text]) => (
           <div className="feature" key={title}>
-            <div className="icon">{icon}</div>
+            <Image
+              src={icon}
+              alt={title}
+              width={52}
+              height={52}
+              className="featureIcon"
+            />
             <h3>{title}</h3>
             <p>{text}</p>
           </div>
