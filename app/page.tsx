@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const features = [
   [
-    "/images/premium-components.png",
+    "/images/premium-component.png",
     "Premium Components",
     "We use only top quality blanks and components from trusted brands.",
   ],
