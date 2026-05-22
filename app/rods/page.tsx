@@ -21,6 +21,25 @@ const categories = [
   },
 ];
 
+const whyCards = [
+  {
+    title: "Blank Selection",
+    image: "/images/bay-shore.jpg",
+  },
+  {
+    title: "Guide Layout",
+    image: "/images/rod-closeup-01.png",
+  },
+  {
+    title: "Thread & Finish",
+    image: "/images/thread.png",
+  },
+  {
+    title: "Built To Fish",
+    image: "/images/rods-cta.png",
+  },
+];
+
 export default function RodsPage() {
   return (
     <main className="rodsPage">
@@ -39,6 +58,7 @@ export default function RodsPage() {
               className="rodCategoryImage"
               style={{ backgroundImage: `url(${item.image})` }}
             />
+
             <div className="rodCategoryContent">
               <h2>{item.title}</h2>
               <p>{item.text}</p>
@@ -50,11 +70,16 @@ export default function RodsPage() {
       <section className="rodsWhy">
         <h2>What Makes An Ibarra Rod Different</h2>
 
-        <div className="whyGrid">
-          <div className="whyCard">Blank Selection</div>
-          <div className="whyCard">Guide Layout</div>
-          <div className="whyCard">Thread & Finish</div>
-          <div className="whyCard">Built To Fish</div>
+        <div className="whyGrid whyImages">
+          {whyCards.map((item) => (
+            <div
+              key={item.title}
+              className="whyImageCard"
+              style={{ backgroundImage: `url(${item.image})` }}
+            >
+              <span>{item.title}</span>
+            </div>
+          ))}
         </div>
       </section>
 
