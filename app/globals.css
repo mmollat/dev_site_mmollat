@@ -455,11 +455,15 @@ a {
 }
 
 .rodsHeroContent h1 {
-  font-family: Oswald;
-  font-size: 74px;
-  line-height: 1.02;
-  margin: 18px 0 26px;
+  margin: 0;
+  font-family: Oswald, sans-serif;
+  font-size: 92px;
+  line-height: .94;
   text-transform: uppercase;
+  letter-spacing: .03em;
+  color: white;
+  text-shadow:
+    0 4px 24px rgba(0,0,0,.65);
 }
 
 .rodsHeroContent p {
