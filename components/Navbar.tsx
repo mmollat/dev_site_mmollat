@@ -1,9 +1,15 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
+
   return (
     <header className="nav">
-      <a href="/">
+      <Link href="/">
         <Image
           src="/images/ibarra-logo.png"
           alt="Ibarra Custom Rods"
@@ -11,25 +17,57 @@ export default function Navbar() {
           height={90}
           priority
         />
-      </a>
+      </Link>
 
       <nav>
-        <a href="/">Home</a>
+        <Link
+          href="/"
+          className={pathname === "/" ? "active" : ""}
+        >
+          Home
+        </Link>
 
-        <a href="/#rods">Rods</a>
+        <Link href="/#rods">
+          Rods
+        </Link>
 
-        <a href="/#process">Build Process</a>
+        <Link
+          href="/build-process"
+          className={
+            pathname === "/build-process"
+              ? "active"
+              : ""
+          }
+        >
+          Build Process
+        </Link>
 
-        <a href="/#gallery">Gallery</a>
+        <Link href="/#gallery">
+          Gallery
+        </Link>
 
-        <a href="/about">About</a>
+        <Link
+          href="/about"
+          className={
+            pathname === "/about"
+              ? "active"
+              : ""
+          }
+        >
+          About
+        </Link>
 
-        <a href="/#contact">Contact</a>
+        <Link href="/#contact">
+          Contact
+        </Link>
       </nav>
 
-      <a href="/#contact" className="outlineBtn">
+      <Link
+        href="/#contact"
+        className="outlineBtn"
+      >
         Build Your Rod
-      </a>
+      </Link>
     </header>
   );
 }
