@@ -49,8 +49,8 @@ const cards = [
     "About Ibarra",
     "Built on passion, precision, and a love for fishing. Learn our story.",
     "Our Story",
-    "/about",
     "/images/butt-cap-detail.png",
+    "/about",
   ],
 ];
 
