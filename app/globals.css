@@ -419,8 +419,10 @@ a {
   align-items: center;
   overflow: hidden;
   background-image: url("/images/rods-hero-banner.png");
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: 050505;
 }
 
 .rodsHeroImage {
