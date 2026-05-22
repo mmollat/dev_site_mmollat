@@ -478,11 +478,11 @@ a {
 }
 
 .rodsOptionsPanel {
-  background-image: url("/images/rods-options.png");
+  background-image: url("/images/thread-detail.png");
 }
 
 .rodsCtaPanel {
-  background-image: url("/images/rods-cta.png");
+  background-image: url("/images/ready-to-build.png");
 }
 
 /* MOBILE */
