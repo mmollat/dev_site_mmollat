@@ -421,7 +421,7 @@ a {
   background-image: url("/images/rods-hero-banner.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center 105px;
   background-color: 050505;
 }
 
