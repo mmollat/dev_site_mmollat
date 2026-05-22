@@ -418,7 +418,7 @@ a {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-image: url("/images/rods-hero-banner.jpeg");
+  background-image: url("/images/rods-hero-banner.png");
   background-size: cover;
   background-position: center;
 }
