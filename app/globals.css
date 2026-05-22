@@ -67,7 +67,7 @@ a {
   color: #c99743 !important;
 }
 
-/* HERO */
+/* HOME HERO */
 
 .hero {
   position: relative;
@@ -174,7 +174,7 @@ a {
   line-height: 1.5;
 }
 
-/* CARDS */
+/* HOME CARDS */
 
 .cards {
   display: grid;
@@ -487,6 +487,43 @@ a {
   letter-spacing: .14em;
 }
 
+.whyImages {
+  gap: 18px;
+}
+
+.whyImageCard {
+  position: relative;
+  min-height: 260px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 28px;
+  border: 1px solid rgba(201,151,67,.25);
+}
+
+.whyImageCard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.88),
+    rgba(0,0,0,.18)
+  );
+}
+
+.whyImageCard span {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-family: Oswald;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
 .rodsOptionsPanel {
   min-height: 520px;
   background-image: url("/images/rods-options.png");
@@ -501,39 +538,6 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-@media (max-width:900px) {
-  .rodsHero {
-    padding-top: 0;
-  }
-
-  .rodsCategories,
-  .whyGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .rodCategory {
-    border-right: none;
-  }
-
-  .rodsWhy {
-    padding: 60px 24px;
-  }
-
-  .rodsWhy h2 {
-    font-size: 38px;
-  }
-
-  .rodsOptionsPanel {
-    min-height: 360px;
-    background-size: cover;
-  }
-
-  .rodsCtaPanel {
-    min-height: 300px;
-    background-size: cover;
-  }
 }
 
 /* MOBILE */
@@ -568,13 +572,13 @@ a {
   .aboutBody,
   .buildRow,
   .rodsCategories,
-  .whyGrid,
-  .buildOptions {
+  .whyGrid {
     grid-template-columns: 1fr;
   }
 
   .card,
-  .feature {
+  .feature,
+  .rodCategory {
     border-right: none;
   }
 
@@ -586,8 +590,7 @@ a {
 
   .aboutBody,
   .buildSteps,
-  .rodsWhy,
-  .buildOptions {
+  .rodsWhy {
     padding: 60px 24px;
   }
 
@@ -601,13 +604,24 @@ a {
   }
 
   .rodsHero {
-    min-height: 420px;
-    background-position: 62% center;
+    padding-top: 0;
   }
 
-  .rodsWhy h2,
-  .buildOptions h2,
-  .rodsCTA h2 {
+  .rodsWhy h2 {
     font-size: 38px;
+  }
+
+  .whyImageCard {
+    min-height: 280px;
+  }
+
+  .rodsOptionsPanel {
+    min-height: 360px;
+    background-size: cover;
+  }
+
+  .rodsCtaPanel {
+    min-height: 300px;
+    background-size: cover;
   }
 }
