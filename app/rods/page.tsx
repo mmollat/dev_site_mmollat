@@ -24,11 +24,11 @@ const categories = [
 const whyCards = [
   {
     title: "Blank Selection",
-    image: "/images/bay-shore.jpg",
+    image: "/images/premium-component.png",
   },
   {
     title: "Guide Layout",
-    image: "/images/rod-closeup-01.png",
+    image: "/images/expert-craftsmanship.png",
   },
   {
     title: "Thread & Finish",
@@ -68,56 +68,25 @@ export default function RodsPage() {
       </section>
 
       <section className="rodsWhy">
-  <h2>What Makes An Ibarra Rod Different</h2>
+        <h2>What Makes An Ibarra Rod Different</h2>
 
-  <div className="whyGrid whyImages">
+        <div className="whyGrid whyImages">
+          {whyCards.map((item) => (
+            <div
+              key={item.title}
+              className="whyImageCard"
+              style={{ backgroundImage: `url(${item.image})` }}
+            >
+              <span>{item.title}</span>
+            </div>
+          ))}
+        </div>
+      </section>
 
-    <div
-      className="whyImageCard"
-      style={{
-        backgroundImage:
-          "url('/images/premium-component.png')",
-      }}
-    >
-      <span>Blank Selection</span>
-    </div>
-
-    <div
-      className="whyImageCard"
-      style={{
-        backgroundImage:
-          "url('/images/expert-craftsmanship.png')",
-      }}
-    >
-      <span>Guide Layout</span>
-    </div>
-
-    <div
-      className="whyImageCard"
-      style={{
-        backgroundImage:
-          "url('/images/thread-detail.png')",
-      }}
-    >
-      <span>Thread & Finish</span>
-    </div>
-
-    <div
-      className="whyImageCard"
-      style={{
-        backgroundImage:
-          "url('/images/ready-to-build.png')",
-      }}
-    >
-      <span>Built To Fish</span>
-    </div>
-
-  </div>
-</section>
-
-      <section className="rodsOptionsPanel" />
-
-      <section className="rodsCtaPanel" />
+      <section className="rodsBottomPanels">
+        <div className="rodsOptionsPanel" />
+        <div className="rodsCtaPanel" />
+      </section>
     </main>
   );
 }
