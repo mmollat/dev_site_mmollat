@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const features = [
-  ["/images/premium-components.png", "Premium Components", "We use only top quality blanks and components from trusted brands."],
+  ["/images/premium-component.png", "Premium Components", "We use only top quality blanks and components from trusted brands."],
   ["/images/expert-craftsmanship.png", "Expert Craftsmanship", "Every rod is meticulously built by hand with attention to every detail."],
   ["/images/built-for-performance.png", "Built For Performance", "Designed to handle the toughest conditions and the biggest fish."],
   ["/images/built-in-usa.png", "Built In The USA", "Proudly built in the USA for anglers who demand the best."],
