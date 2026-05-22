@@ -1,24 +1,19 @@
-import Image from "next/image";
-
 const categories = [
   {
     title: "Bay & Inshore",
     text: "Balanced builds designed for versatility, sensitivity, and everyday use.",
     image: "/images/rod-closeup-02.png",
   },
-
   {
     title: "Offshore",
     text: "Built for power, durability, and confidence under heavy load.",
     image: "/images/angler-lifestyle.png",
   },
-
   {
     title: "Technique Specific",
     text: "Dialed around specialized methods and personal fishing style.",
     image: "/images/build-process-01.png",
   },
-
   {
     title: "Fully Custom",
     text: "Your vision brought to life with complete customization.",
@@ -47,53 +42,18 @@ const options = [
 export default function RodsPage() {
   return (
     <main className="rodsPage">
-      <section className="rodsHero">
-        <div className="rodsOverlay" />
-
-        <Image
-          src="/images/rods-hero-banner.png"
-          alt="Custom Fishing Rods"
-          fill
-          priority
-          className="rodsHeroImage"
-        />
-
-        <div className="rodsHeroContent">
-          <span>Custom Rod Collection</span>
-
-          <h1>
-            Built Around
-            <br />
-            How You Fish.
-          </h1>
-
-          <p>
-            Every rod starts with understanding your fishing style,
-            target species, and performance goals.
-          </p>
-
-          <a href="/#contact">
-            Start Your Build
-          </a>
-        </div>
-      </section>
+      <section className="rodsHero" />
 
       <section className="rodsCategories">
         {categories.map((item) => (
-          <article
-            key={item.title}
-            className="rodCategory"
-          >
+          <article key={item.title} className="rodCategory">
             <div
               className="rodCategoryImage"
-              style={{
-                backgroundImage: `url(${item.image})`,
-              }}
+              style={{ backgroundImage: `url(${item.image})` }}
             />
 
             <div className="rodCategoryContent">
               <h2>{item.title}</h2>
-
               <p>{item.text}</p>
             </div>
           </article>
@@ -105,10 +65,7 @@ export default function RodsPage() {
 
         <div className="whyGrid">
           {reasons.map((item) => (
-            <div
-              key={item}
-              className="whyCard"
-            >
+            <div key={item} className="whyCard">
               {item}
             </div>
           ))}
@@ -118,15 +75,12 @@ export default function RodsPage() {
       <section className="buildOptions">
         <div>
           <span>Build Choices</span>
-
           <h2>Customize Every Detail</h2>
         </div>
 
         <div className="optionsGrid">
           {options.map((item) => (
-            <div key={item}>
-              {item}
-            </div>
+            <div key={item}>{item}</div>
           ))}
         </div>
       </section>
@@ -138,9 +92,7 @@ export default function RodsPage() {
           Your Rod?
         </h2>
 
-        <a href="/#contact">
-          Start Your Build
-        </a>
+        <a href="/#contact">Start Your Build</a>
       </section>
     </main>
   );
