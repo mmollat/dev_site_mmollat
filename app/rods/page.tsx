@@ -1,129 +1,66 @@
-/* RODS PAGE */
+const categories = [
+  {
+    title: "Bay & Inshore",
+    text: "Balanced builds designed for versatility, sensitivity, and everyday use.",
+    image: "/images/rods-bay-inshore.png",
+  },
+  {
+    title: "Offshore",
+    text: "Built for power, durability, and confidence under heavy load.",
+    image: "/images/rods-offshore.png",
+  },
+  {
+    title: "Technique Specific",
+    text: "Dialed around specialized methods and personal fishing style.",
+    image: "/images/rods-technique-specific.png",
+  },
+  {
+    title: "Fully Custom",
+    text: "Your vision brought to life with complete customization.",
+    image: "/images/rods-fully-custom.png",
+  },
+];
 
-.rodsPage {
-  background: #050505;
-}
+export default function RodsPage() {
+  return (
+    <main className="rodsPage">
+      <section className="rodsHero">
+        <img
+          src="/images/rods-hero-banner.png"
+          alt="Custom rods built around how you fish"
+          className="rodsHeroBanner"
+        />
+      </section>
 
-.rodsHero {
-  padding-top: 105px;
-  background: #050505;
-}
+      <section className="rodsCategories">
+        {categories.map((item) => (
+          <article key={item.title} className="rodCategory">
+            <div
+              className="rodCategoryImage"
+              style={{ backgroundImage: `url(${item.image})` }}
+            />
+            <div className="rodCategoryContent">
+              <h2>{item.title}</h2>
+              <p>{item.text}</p>
+            </div>
+          </article>
+        ))}
+      </section>
 
-.rodsHeroBanner {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+      <section className="rodsWhy">
+        <h2>What Makes An Ibarra Rod Different</h2>
 
-.rodsCategories {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  background: #0b0b0b;
-}
+        <div className="whyGrid">
+          <div className="whyCard">Blank Selection</div>
+          <div className="whyCard">Guide Layout</div>
+          <div className="whyCard">Thread & Finish</div>
+          <div className="whyCard">Built To Fish</div>
+        </div>
+      </section>
 
-.rodCategory {
-  border-right: 1px solid rgba(255,255,255,.12);
-}
+      <section className="rodsOptionsPanel" />
 
-.rodCategory:last-child {
-  border-right: none;
-}
-
-.rodCategoryImage {
-  min-height: 300px;
-  background-size: cover;
-  background-position: center;
-}
-
-.rodCategoryContent {
-  padding: 36px;
-}
-
-.rodCategoryContent h2 {
-  margin: 0 0 14px;
-  font-family: Oswald;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-}
-
-.rodCategoryContent p {
-  color: rgba(255,255,255,.68);
-  line-height: 1.6;
-}
-
-.rodsWhy {
-  padding: 90px 70px;
-  background: #070707;
-  text-align: center;
-}
-
-.rodsWhy h2 {
-  font-family: Oswald;
-  font-size: 54px;
-  margin-bottom: 48px;
-  text-transform: uppercase;
-}
-
-.whyGrid {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 18px;
-}
-
-.whyCard {
-  padding: 36px 24px;
-  border: 1px solid rgba(201,151,67,.35);
-  color: #c99743;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: .14em;
-}
-
-.rodsOptionsPanel {
-  min-height: 520px;
-  background-image: url("/images/rods-options.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.rodsCtaPanel {
-  min-height: 420px;
-  background-image: url("/images/rods-cta.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-@media (max-width:900px) {
-  .rodsHero {
-    padding-top: 0;
-  }
-
-  .rodsCategories,
-  .whyGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .rodCategory {
-    border-right: none;
-  }
-
-  .rodsWhy {
-    padding: 60px 24px;
-  }
-
-  .rodsWhy h2 {
-    font-size: 38px;
-  }
-
-  .rodsOptionsPanel {
-    min-height: 360px;
-    background-size: cover;
-  }
-
-  .rodsCtaPanel {
-    min-height: 300px;
-    background-size: cover;
-  }
+      <section className="rodsCtaPanel" />
+    </main>
+  );
 }
