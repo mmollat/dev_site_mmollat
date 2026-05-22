@@ -68,20 +68,52 @@ export default function RodsPage() {
       </section>
 
       <section className="rodsWhy">
-        <h2>What Makes An Ibarra Rod Different</h2>
+  <h2>What Makes An Ibarra Rod Different</h2>
 
-        <div className="whyGrid whyImages">
-          {whyCards.map((item) => (
-            <div
-              key={item.title}
-              className="whyImageCard"
-              style={{ backgroundImage: `url(${item.image})` }}
-            >
-              <span>{item.title}</span>
-            </div>
-          ))}
-        </div>
-      </section>
+  <div className="whyGrid whyImages">
+
+    <div
+      className="whyImageCard"
+      style={{
+        backgroundImage:
+          "url('/images/premium-component.png')",
+      }}
+    >
+      <span>Blank Selection</span>
+    </div>
+
+    <div
+      className="whyImageCard"
+      style={{
+        backgroundImage:
+          "url('/images/expert-craftsmanship.png')",
+      }}
+    >
+      <span>Guide Layout</span>
+    </div>
+
+    <div
+      className="whyImageCard"
+      style={{
+        backgroundImage:
+          "url('/images/thread.png')",
+      }}
+    >
+      <span>Thread & Finish</span>
+    </div>
+
+    <div
+      className="whyImageCard"
+      style={{
+        backgroundImage:
+          "url('/images/built-for-performance.png')",
+      }}
+    >
+      <span>Built To Fish</span>
+    </div>
+
+  </div>
+</section>
 
       <section className="rodsOptionsPanel" />
 
