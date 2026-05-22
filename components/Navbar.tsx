@@ -27,32 +27,30 @@ export default function Navbar() {
           Home
         </Link>
 
-        <Link href="/#rods">
+        <Link
+          href="/rods"
+          className={pathname === "/rods" ? "active" : ""}
+        >
           Rods
         </Link>
 
         <Link
           href="/build-process"
-          className={
-            pathname === "/build-process"
-              ? "active"
-              : ""
-          }
+          className={pathname === "/build-process" ? "active" : ""}
         >
           Build Process
         </Link>
 
-        <Link href="/#gallery">
+        <Link
+          href="/gallery"
+          className={pathname === "/gallery" ? "active" : ""}
+        >
           Gallery
         </Link>
 
         <Link
           href="/about"
-          className={
-            pathname === "/about"
-              ? "active"
-              : ""
-          }
+          className={pathname === "/about" ? "active" : ""}
         >
           About
         </Link>
