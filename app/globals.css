@@ -468,19 +468,17 @@ a {
 .rodsBottomPanels {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: #050505;
   gap: 6px;
+  background: #050505;
 }
 
 .rodsOptionsPanel,
 .rodsCtaPanel {
-  position: relative;
-  min-height: 520px;
+  min-height: 0;
+  aspect-ratio: 3 / 2;
   background-size: cover;
-  background-position: center top;
+  background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
-  background-color: #050505;
 }
 
 .rodsOptionsPanel {
@@ -491,68 +489,9 @@ a {
   background-image: url("/images/ready-to-build.png");
 }
 
-.rodsOptionsPanel::after,
-.rodsCtaPanel::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 150px;
-  background: #050505;
-  z-index: 1;
-}
-
-.rodsOptionsPanel::before,
-.rodsCtaPanel::before {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  width: 95%;
-  text-align: center;
-  font-family: Oswald;
-  text-transform: uppercase;
-  white-space: pre-line;
-}
-
-.rodsOptionsPanel::before {
-  content: "CUSTOMIZE EVERY DETAIL\A\A ROD TYPE  •  LENGTH  •  POWER  •  ACTION  •  GRIP STYLE  •  THREAD COLORS  •  PERSONALIZATION  •  TARGET SPECIES";
-  bottom: 34px;
-  color: white;
-  font-size: 40px;
-  line-height: 1.35;
-  letter-spacing: 0.04em;
-}
-
-.rodsCtaPanel::before {
-  content: "READY TO BUILD YOUR ROD?\A\A START YOUR BUILD  →";
-  bottom: 34px;
-  color: white;
-  font-size: 40px;
-  line-height: 1.35;
-  letter-spacing: 0.08em;
-}
-
 @media (max-width: 900px) {
   .rodsBottomPanels {
     grid-template-columns: 1fr;
-  }
-
-  .rodsOptionsPanel,
-  .rodsCtaPanel {
-    min-height: 360px;
-  }
-
-  .rodsOptionsPanel::after,
-  .rodsCtaPanel::after {
-    height: 125px;
-  }
-
-  .rodsOptionsPanel::before,
-  .rodsCtaPanel::before {
-    bottom: 24px;
-    font-size: 25px;
   }
 }
 
