@@ -21,28 +21,10 @@ const categories = [
   },
 ];
 
-const whyCards = [
-  {
-    title: "Blank Selection",
-    image: "/images/premium-component.png",
-  },
-  {
-    title: "Guide Layout",
-    image: "/images/expert-craftsmanship.png",
-  },
-  {
-    title: "Thread & Finish",
-    image: "/images/thread-detail.png",
-  },
-  {
-    title: "Built To Fish",
-    image: "/images/ready-to-build.png",
-  },
-];
-
 export default function RodsPage() {
   return (
     <main className="rodsPage">
+
       <section className="rodsHero">
         <img
           src="/images/rods-hero-banner.png"
@@ -53,14 +35,20 @@ export default function RodsPage() {
 
       <section className="rodsCategories">
         {categories.map((item) => (
-          <article key={item.title} className="rodCategory">
+          <article
+            key={item.title}
+            className="rodCategory"
+          >
             <div
               className="rodCategoryImage"
-              style={{ backgroundImage: `url(${item.image})` }}
+              style={{
+                backgroundImage: `url(${item.image})`,
+              }}
             />
 
             <div className="rodCategoryContent">
               <h2>{item.title}</h2>
+
               <p>{item.text}</p>
             </div>
           </article>
@@ -69,24 +57,14 @@ export default function RodsPage() {
 
       <section className="rodsWhy">
         <h2>What Makes An Ibarra Rod Different</h2>
-
-        <div className="whyGrid whyImages">
-          {whyCards.map((item) => (
-            <div
-              key={item.title}
-              className="whyImageCard"
-              style={{ backgroundImage: `url(${item.image})` }}
-            >
-              <span>{item.title}</span>
-            </div>
-          ))}
-        </div>
       </section>
 
       <section className="rodsBottomPanels">
         <div className="rodsOptionsPanel" />
+
         <div className="rodsCtaPanel" />
       </section>
+
     </main>
   );
 }
