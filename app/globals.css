@@ -28,19 +28,12 @@ a {
   position: absolute;
   inset: 0 0 auto 0;
   z-index: 20;
-
   height: 105px;
-
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
-
   padding: 0 70px;
-
   background: rgba(0, 0, 0, 0.72);
-
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -56,29 +49,21 @@ a {
 
 .nav a {
   color: #e8e0d4;
-
   text-transform: uppercase;
-
   font-size: 13px;
-
   font-weight: 800;
-
   letter-spacing: 0.14em;
 }
 
 .nav .active {
   color: #c99743;
-
   border-bottom: 2px solid #c99743;
-
   padding-bottom: 10px;
 }
 
 .outlineBtn {
   border: 1px solid #c99743;
-
   padding: 16px 28px;
-
   color: #c99743 !important;
 }
 
@@ -86,87 +71,60 @@ a {
 
 .hero {
   position: relative;
-
   min-height: 520px;
-
   padding: 145px 70px 70px;
-
   background-image: url("/images/hero-banner.png");
-
   background-size: cover;
-
   background-position: center;
 }
 
 .heroOverlay {
   position: absolute;
-
   inset: 0;
-
-  background:
-    linear-gradient(
-      90deg,
-      #050505 0%,
-      rgba(0, 0, 0, 0.72) 32%,
-      rgba(0, 0, 0, 0.18) 100%
-    );
+  background: linear-gradient(
+    90deg,
+    #050505 0%,
+    rgba(0, 0, 0, 0.72) 32%,
+    rgba(0, 0, 0, 0.18) 100%
+  );
 }
 
 .heroContent {
   position: relative;
-
   z-index: 2;
-
   max-width: 650px;
 }
 
 .hero h1 {
   margin: 0;
-
   font-family: Oswald;
-
   font-size: 68px;
-
   line-height: 1.05;
-
   text-transform: uppercase;
 }
 
 .goldLine {
   width: 56px;
-
   height: 2px;
-
   background: #c99743;
-
   margin: 26px 0;
 }
 
 .hero p {
   max-width: 440px;
-
   font-size: 20px;
-
   line-height: 1.5;
-
   color: rgba(255,255,255,.78);
-
   margin-bottom: 28px;
 }
 
 .goldBtn {
   display: inline-block;
-
   background: #c99743;
-
   color: black;
-
   padding: 17px 30px;
-
   font-weight: 900;
-
   text-transform: uppercase;
-
   letter-spacing: .16em;
 }
 
@@ -174,21 +132,15 @@ a {
 
 .features {
   display: grid;
-
   grid-template-columns: repeat(4,1fr);
-
   background: #101010;
-
   border-top: 1px solid rgba(255,255,255,.12);
-
   border-bottom: 1px solid rgba(255,255,255,.12);
 }
 
 .feature {
   text-align: center;
-
   padding: 26px 40px;
-
   border-right: 1px solid rgba(255,255,255,.12);
 }
 
@@ -198,27 +150,27 @@ a {
 
 .featureIcon {
   width: 52px;
-
   height: 52px;
-
   object-fit: contain;
-
   margin-bottom: 14px;
+}
+
+.icon {
+  color: #c99743;
+  font-size: 34px;
+  margin-bottom: 8px;
 }
 
 .feature h3,
 .card h2 {
   font-family: Oswald;
-
   text-transform: uppercase;
-
   letter-spacing: .08em;
 }
 
 .feature p,
 .card p {
   color: rgba(255,255,255,.68);
-
   line-height: 1.5;
 }
 
@@ -226,23 +178,16 @@ a {
 
 .cards {
   display: grid;
-
   grid-template-columns: repeat(4,1fr);
 }
 
 .card {
   position: relative;
-
   min-height: 320px;
-
   background-size: cover;
-
   background-position: center;
-
   padding: 42px;
-
   overflow: hidden;
-
   border-right: 1px solid rgba(255,255,255,.12);
 }
 
@@ -252,38 +197,27 @@ a {
 
 .cardOverlay {
   position: absolute;
-
   inset: 0;
-
-  background:
-    linear-gradient(
-      90deg,
-      rgba(0,0,0,.88),
-      rgba(0,0,0,.38)
-    );
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,.88),
+    rgba(0,0,0,.38)
+  );
 }
 
 .cardContent {
   position: relative;
-
   z-index: 2;
 }
 
 .card a {
   display: inline-block;
-
   margin-top: 26px;
-
   border: 1px solid #c99743;
-
   padding: 12px 24px;
-
   color: white;
-
   text-transform: uppercase;
-
   font-size: 12px;
-
   font-weight: 900;
 }
 
@@ -291,37 +225,27 @@ a {
 
 .quote {
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   gap: 28px;
-
   padding: 32px 70px;
-
   background: #070707;
 }
 
 .quote span {
   color: #c99743;
-
   font-size: 76px;
 }
 
 .quote p {
   color: rgba(255,255,255,.66);
-
   font-size: 20px;
-
   font-style: italic;
 }
 
 .quote strong {
   color: #c99743;
-
   text-transform: uppercase;
-
   letter-spacing: .2em;
 }
 
@@ -333,71 +257,52 @@ a {
 
 .aboutHero {
   position: relative;
-
   min-height: 520px;
-
   display: flex;
-
   align-items: center;
-
   padding: 140px 70px 80px;
-
   background-image: url("/images/hero-banner.png");
-
   background-size: cover;
 }
 
 .aboutOverlay {
   position: absolute;
-
   inset: 0;
-
-  background:
-    linear-gradient(
-      90deg,
-      #050505,
-      rgba(0,0,0,.75)
-    );
+  background: linear-gradient(
+    90deg,
+    #050505,
+    rgba(0,0,0,.75)
+  );
 }
 
 .aboutContent {
   position: relative;
-
   z-index: 2;
-
   max-width: 760px;
 }
 
 .eyebrow {
   color: #c99743;
-
   font-weight: 900;
-
   letter-spacing: .2em;
 }
 
 .aboutContent h1,
 .aboutText h2 {
   font-family: Oswald;
-
   text-transform: uppercase;
 }
 
 .aboutBody {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
-
   gap: 60px;
-
   padding: 90px 70px;
 }
 
 .aboutImage {
   position: relative;
-
   min-height: 520px;
-
   overflow: hidden;
 }
 
@@ -413,58 +318,41 @@ a {
 
 .buildHero {
   position: relative;
-
   min-height: 560px;
-
   display: flex;
-
   align-items: center;
-
   padding: 140px 70px 80px;
-
   background-image: url("/images/build-process-01.png");
-
   background-size: cover;
-
   background-position: center;
 }
 
 .buildHeroOverlay {
   position: absolute;
-
   inset: 0;
-
-  background:
-    linear-gradient(
-      90deg,
-      rgba(0,0,0,.88),
-      rgba(0,0,0,.42)
-    );
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,.88),
+    rgba(0,0,0,.42)
+  );
 }
 
 .buildHeroContent {
   position: relative;
-
   z-index: 2;
-
   max-width: 760px;
 }
 
 .buildEyebrow {
   color: #c99743;
-
   font-weight: 900;
-
   letter-spacing: .25em;
-
   text-transform: uppercase;
 }
 
 .buildHero h1 {
   font-family: Oswald;
-
   font-size: 64px;
-
   text-transform: uppercase;
 }
 
@@ -474,13 +362,9 @@ a {
 
 .buildRow {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
-
   gap: 60px;
-
   margin-bottom: 90px;
-
   align-items: center;
 }
 
@@ -494,9 +378,7 @@ a {
 
 .buildImage {
   position: relative;
-
   min-height: 520px;
-
   overflow: hidden;
 }
 
@@ -506,96 +388,25 @@ a {
 
 .buildCTA {
   text-align: center;
-
   padding: 90px 24px;
-
   background: #070707;
 }
 
 .buildCTA h2 {
   font-family: Oswald;
-
   font-size: 54px;
 }
 
 .buildCTA a {
   display: inline-block;
-
   margin-top: 20px;
-
   background: #c99743;
-
   color: black;
-
   padding: 18px 30px;
-
   font-weight: 900;
 }
 
-/* MOBILE */
-
-@media (max-width:900px) {
-
-.nav{
-position:relative;
-padding:22px;
-height:auto;
-flex-direction:column;
-}
-
-.nav nav{
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.hero,
-.aboutHero,
-.buildHero{
-padding:90px 24px;
-}
-
-.hero h1,
-.aboutContent h1,
-.buildHero h1{
-font-size:42px;
-}
-
-.features,
-.cards,
-.aboutBody,
-.buildRow{
-grid-template-columns:1fr;
-}
-
-.card,
-.feature{
-border-right:none;
-}
-
-.quote{
-flex-direction:column;
-text-align:center;
-padding:30px 24px;
-}
-
-.aboutBody,
-.buildSteps{
-padding:60px 24px;
-}
-
-.aboutImage,
-.buildImage{
-min-height:360px;
-}
-
-.outlineBtn{
-display:none;
-}
-
-}
-/* =========================
-   RODS PAGE
-========================= */
+/* RODS PAGE */
 
 .rodsPage {
   background: #050505;
@@ -603,105 +414,76 @@ display:none;
 
 .rodsHero {
   position: relative;
-
   min-height: 650px;
-
   display: flex;
-
   align-items: center;
-
   padding: 150px 70px 80px;
-
   overflow: hidden;
 }
 
 .rodsHeroImage {
   object-fit: cover;
-
+  object-position: 78% center;
   z-index: 0;
 }
 
 .rodsOverlay {
   position: absolute;
-
   inset: 0;
-
   z-index: 1;
-
-  background:
-    linear-gradient(
-      90deg,
-      rgba(0,0,0,.92),
-      rgba(0,0,0,.55),
-      rgba(0,0,0,.18)
-    );
+  background: linear-gradient(
+    90deg,
+    #050505 0%,
+    #050505 38%,
+    rgba(0,0,0,.82) 55%,
+    rgba(0,0,0,.28) 100%
+  );
 }
 
 .rodsHeroContent {
   position: relative;
-
   z-index: 2;
-
-  max-width: 700px;
+  max-width: 620px;
 }
 
 .rodsHeroContent span,
 .buildOptions span {
   color: #c99743;
-
   font-weight: 900;
-
   letter-spacing: .22em;
-
   text-transform: uppercase;
 }
 
 .rodsHeroContent h1 {
   font-family: Oswald;
-
   font-size: 74px;
-
   line-height: 1.02;
-
   margin: 18px 0 26px;
-
   text-transform: uppercase;
 }
 
 .rodsHeroContent p {
   max-width: 520px;
-
   color: rgba(255,255,255,.72);
-
   font-size: 20px;
-
   line-height: 1.7;
 }
 
 .rodsHeroContent a,
 .rodsCTA a {
   display: inline-block;
-
   margin-top: 32px;
-
   background: #c99743;
-
   color: black;
-
   padding: 18px 32px;
-
   font-weight: 900;
-
   text-transform: uppercase;
-
   letter-spacing: .16em;
 }
 
 .rodsCategories {
   display: grid;
-
   grid-template-columns: repeat(4,1fr);
-
   background: #0b0b0b;
 }
 
@@ -715,9 +497,7 @@ display:none;
 
 .rodCategoryImage {
   min-height: 300px;
-
   background-size: cover;
-
   background-position: center;
 }
 
@@ -727,148 +507,175 @@ display:none;
 
 .rodCategoryContent h2 {
   margin: 0 0 14px;
-
   font-family: Oswald;
-
   text-transform: uppercase;
-
   letter-spacing: .08em;
 }
 
 .rodCategoryContent p {
   color: rgba(255,255,255,.68);
-
   line-height: 1.6;
 }
 
 .rodsWhy {
   padding: 90px 70px;
-
   background: #070707;
-
   text-align: center;
 }
 
 .rodsWhy h2 {
   font-family: Oswald;
-
   font-size: 54px;
-
   margin-bottom: 48px;
-
   text-transform: uppercase;
 }
 
 .whyGrid {
   display: grid;
-
   grid-template-columns: repeat(4,1fr);
-
   gap: 18px;
 }
 
 .whyCard {
   padding: 36px 24px;
-
   border: 1px solid rgba(201,151,67,.35);
-
   color: #c99743;
-
   font-weight: 900;
-
   text-transform: uppercase;
-
   letter-spacing: .14em;
 }
 
 .buildOptions {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
-
   gap: 70px;
-
   align-items: center;
-
   padding: 100px 70px;
 }
 
 .buildOptions h2 {
   font-family: Oswald;
-
   font-size: 56px;
-
   margin-top: 18px;
-
   text-transform: uppercase;
 }
 
 .optionsGrid {
   display: grid;
-
   grid-template-columns: repeat(2,1fr);
-
   gap: 16px;
 }
 
 .optionsGrid div {
   background: #111;
-
   border: 1px solid rgba(255,255,255,.12);
-
   padding: 20px;
-
   font-weight: 800;
-
   text-transform: uppercase;
-
   color: rgba(255,255,255,.82);
 }
 
 .rodsCTA {
   text-align: center;
-
   padding: 110px 24px;
-
   background: #070707;
 }
 
 .rodsCTA h2 {
   font-family: Oswald;
-
   font-size: 60px;
-
   line-height: 1.04;
-
   text-transform: uppercase;
 }
 
-@media (max-width:900px){
+/* MOBILE */
 
-.rodsHero{
-padding:110px 24px 70px;
-min-height:540px;
-}
+@media (max-width:900px) {
+  .nav {
+    position: relative;
+    padding: 22px;
+    height: auto;
+    flex-direction: column;
+  }
 
-.rodsHeroContent h1{
-font-size:44px;
-}
+  .nav nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-.rodsCategories,
-.whyGrid,
-.buildOptions{
-grid-template-columns:1fr;
-}
+  .hero,
+  .aboutHero,
+  .buildHero {
+    padding: 90px 24px;
+  }
 
-.rodsWhy,
-.buildOptions{
-padding:60px 24px;
-}
+  .hero h1,
+  .aboutContent h1,
+  .buildHero h1 {
+    font-size: 42px;
+  }
 
-.rodsWhy h2,
-.buildOptions h2,
-.rodsCTA h2{
-font-size:38px;
-}
+  .features,
+  .cards,
+  .aboutBody,
+  .buildRow,
+  .rodsCategories,
+  .whyGrid,
+  .buildOptions {
+    grid-template-columns: 1fr;
+  }
 
+  .card,
+  .feature {
+    border-right: none;
+  }
+
+  .quote {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 24px;
+  }
+
+  .aboutBody,
+  .buildSteps,
+  .rodsWhy,
+  .buildOptions {
+    padding: 60px 24px;
+  }
+
+  .aboutImage,
+  .buildImage {
+    min-height: 360px;
+  }
+
+  .outlineBtn {
+    display: none;
+  }
+
+  .rodsHero {
+    padding: 110px 24px 70px;
+    min-height: 540px;
+  }
+
+  .rodsHeroContent h1 {
+    font-size: 44px;
+  }
+
+  .rodsHeroImage {
+    object-position: 72% center;
+  }
+
+  .rodsOverlay {
+    background: linear-gradient(
+      90deg,
+      rgba(0,0,0,.94),
+      rgba(0,0,0,.78)
+    );
+  }
+
+  .rodsWhy h2,
+  .buildOptions h2,
+  .rodsCTA h2 {
+    font-size: 38px;
+  }
 }
