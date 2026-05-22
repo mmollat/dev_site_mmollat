@@ -60,10 +60,35 @@ export default function RodsPage() {
       </section>
 
       <section className="rodsBottomPanels">
-        <div className="rodsOptionsPanel" />
 
-        <div className="rodsCtaPanel" />
-      </section>
+  <div>
+
+    <div className="rodsOptionsPanel" />
+
+    <div className="panelText">
+      <h2>Customize Every Detail</h2>
+
+      <p>
+        Rod Type • Length • Power • Action • Grip Style •
+        Thread Colors • Personalization • Target Species
+      </p>
+    </div>
+
+  </div>
+
+  <div>
+
+    <div className="rodsCtaPanel" />
+
+    <div className="panelText">
+      <h2>Ready To Build Your Rod?</h2>
+
+      <p>Start Your Build →</p>
+    </div>
+
+  </div>
+
+</section>
 
     </main>
   );
