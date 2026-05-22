@@ -96,7 +96,7 @@ export default function RodsPage() {
       className="whyImageCard"
       style={{
         backgroundImage:
-          "url('/images/thread.png')",
+          "url('/images/thread-detail.png')",
       }}
     >
       <span>Thread & Finish</span>
@@ -106,7 +106,7 @@ export default function RodsPage() {
       className="whyImageCard"
       style={{
         backgroundImage:
-          "url('/images/built-for-performance.png')",
+          "url('/images/ready-to-build.png')",
       }}
     >
       <span>Built To Fish</span>
