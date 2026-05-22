@@ -32,11 +32,11 @@ const whyCards = [
   },
   {
     title: "Thread & Finish",
-    image: "/images/thread.png",
+    image: "/images/thread-detail.png",
   },
   {
     title: "Built To Fish",
-    image: "/images/rods-cta.png",
+    image: "/images/ready-to-build.png",
   },
 ];
 
