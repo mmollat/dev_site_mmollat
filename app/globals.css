@@ -475,9 +475,13 @@ a {
 .rodsOptionsPanel,
 .rodsCtaPanel {
   min-height: 0;
+
   aspect-ratio: 3 / 2;
+
   background-size: cover;
+
   background-position: center;
+
   background-repeat: no-repeat;
 }
 
@@ -489,9 +493,99 @@ a {
   background-image: url("/images/ready-to-build.png");
 }
 
+/* TEXT UNDER IMAGES */
+
+.panelText {
+  background: #050505;
+
+  padding: 46px 34px 72px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+.panelText h2 {
+  margin: 0 0 20px;
+
+  font-family: Oswald;
+
+  font-size: 64px;
+
+  line-height: 1;
+
+  text-transform: uppercase;
+
+  color: white;
+
+  text-align: center;
+
+  max-width: 900px;
+}
+
+.panelText p {
+  margin: 0;
+
+  max-width: 920px;
+
+  font-family: Oswald;
+
+  font-size: 26px;
+
+  line-height: 1.75;
+
+  letter-spacing: .08em;
+
+  text-transform: uppercase;
+
+  color: rgba(255,255,255,.82);
+
+  text-align: center;
+}
+
+.panelText p.cta {
+  color: #c99743;
+
+  font-size: 40px;
+
+  letter-spacing: .08em;
+}
+
 @media (max-width: 900px) {
+
   .rodsBottomPanels {
     grid-template-columns: 1fr;
+  }
+
+  .panelText {
+    padding: 32px 22px 46px;
+  }
+
+  .panelText h2 {
+    font-size: 38px;
+  }
+
+  .panelText p {
+    font-size: 18px;
+  }
+
+  .panelText p.cta {
+    font-size: 26px;
+  }
+
+  .rodsOptionsPanel,
+  .rodsCtaPanel {
+    min-height: 420px;
+
+    background-size: cover;
+
+    background-position: center top;
   }
 }
 
