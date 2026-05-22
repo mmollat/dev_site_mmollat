@@ -406,7 +406,9 @@ a {
   font-weight: 900;
 }
 
-/* RODS PAGE */
+/* =========================
+   RODS PAGE
+========================= */
 
 .rodsPage {
   background: #050505;
@@ -423,14 +425,16 @@ a {
   height: auto;
 }
 
+/* CATEGORIES */
+
 .rodsCategories {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  background: #0b0b0b;
+  grid-template-columns: repeat(4, 1fr);
+  background: #050505;
 }
 
 .rodCategory {
-  border-right: 1px solid rgba(255,255,255,.12);
+  border-right: 1px solid rgba(255,255,255,.08);
 }
 
 .rodCategory:last-child {
@@ -438,108 +442,230 @@ a {
 }
 
 .rodCategoryImage {
-  min-height: 300px;
+  height: 300px;
+
   background-size: cover;
+
   background-position: center;
 }
 
 .rodCategoryContent {
-  padding: 36px;
+  padding: 28px;
+
+  background: #070707;
 }
 
 .rodCategoryContent h2 {
-  margin: 0 0 14px;
+  margin: 0 0 12px;
+
   font-family: Oswald;
+
+  font-size: 36px;
+
   text-transform: uppercase;
-  letter-spacing: .08em;
 }
 
 .rodCategoryContent p {
-  color: rgba(255,255,255,.68);
-  line-height: 1.6;
+  color: rgba(255,255,255,.72);
+
+  line-height: 1.55;
 }
 
+/* WHY */
+
 .rodsWhy {
-  padding: 90px 70px;
-  background: #070707;
+  padding: 90px 24px;
+
+  background: #050505;
+
   text-align: center;
 }
 
 .rodsWhy h2 {
+  margin: 0 0 42px;
+
   font-family: Oswald;
-  font-size: 54px;
-  margin-bottom: 48px;
+
+  font-size: 58px;
+
   text-transform: uppercase;
 }
 
 .whyGrid {
   display: grid;
+
   grid-template-columns: repeat(4,1fr);
-  gap: 18px;
-}
 
-.whyCard {
-  padding: 36px 24px;
-  border: 1px solid rgba(201,151,67,.35);
-  color: #c99743;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: .14em;
-}
-
-.whyImages {
-  gap: 18px;
+  gap: 16px;
 }
 
 .whyImageCard {
   position: relative;
-  min-height: 260px;
-  background-size: cover;
-  background-position: center;
+
+  height: 260px;
+
   overflow: hidden;
+
+  background-size: cover;
+
+  background-position: center;
+
   display: flex;
+
   align-items: flex-end;
+
   padding: 28px;
-  border: 1px solid rgba(201,151,67,.25);
+
+  border: 1px solid rgba(201,151,67,.18);
 }
 
 .whyImageCard::before {
   content: "";
+
   position: absolute;
+
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,.88),
-    rgba(0,0,0,.18)
-  );
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,.90),
+      rgba(0,0,0,.15)
+    );
 }
 
 .whyImageCard span {
   position: relative;
+
   z-index: 2;
+
   color: white;
+
   font-family: Oswald;
-  font-size: 24px;
+
+  font-size: 32px;
+
+  line-height: 1;
+
   text-transform: uppercase;
-  letter-spacing: .08em;
+}
+
+/* BOTTOM PANELS */
+
+.rodsBottomPanels {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  background: #050505;
+}
+
+.rodsOptionsPanel,
+.rodsCtaPanel {
+  min-height: 540px;
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
 }
 
 .rodsOptionsPanel {
-  min-height: 520px;
-  background-image: url("/images/rods-options.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image:
+    url("/images/rods-options.png");
 }
 
 .rodsCtaPanel {
-  min-height: 420px;
-  background-image: url("/images/rods-cta.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image:
+    url("/images/rods-cta.png");
 }
 
+/* MOBILE */
+
+@media (max-width:900px){
+
+.nav{
+position:relative;
+padding:22px;
+height:auto;
+flex-direction:column;
+}
+
+.nav nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero,
+.aboutHero,
+.buildHero{
+padding:90px 24px;
+}
+
+.hero h1,
+.aboutContent h1,
+.buildHero h1{
+font-size:42px;
+}
+
+.features,
+.cards,
+.aboutBody,
+.buildRow,
+.rodsCategories,
+.whyGrid,
+.rodsBottomPanels{
+grid-template-columns:1fr;
+}
+
+.card,
+.feature,
+.rodCategory{
+border-right:none;
+}
+
+.quote{
+flex-direction:column;
+text-align:center;
+padding:30px 24px;
+}
+
+.aboutBody,
+.buildSteps,
+.rodsWhy{
+padding:60px 24px;
+}
+
+.aboutImage,
+.buildImage{
+min-height:360px;
+}
+
+.outlineBtn{
+display:none;
+}
+
+.rodsHero{
+padding-top:0;
+}
+
+.rodsWhy h2{
+font-size:38px;
+}
+
+.whyImageCard{
+height:220px;
+}
+
+.rodsOptionsPanel,
+.rodsCtaPanel{
+min-height:300px;
+
+background-position:center;
+}
+
+}
 /* MOBILE */
 
 @media (max-width:900px) {
