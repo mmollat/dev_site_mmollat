@@ -2,22 +2,22 @@ const categories = [
   {
     title: "Bay & Inshore",
     text: "Balanced builds designed for versatility, sensitivity, and everyday use.",
-    image: "/images/rods-bay-inshore.png",
+    image: "/images/bay-shore.jpg",
   },
   {
     title: "Offshore",
     text: "Built for power, durability, and confidence under heavy load.",
-    image: "/images/rods-offshore.png",
+    image: "/images/offshore.PNG",
   },
   {
     title: "Technique Specific",
     text: "Dialed around specialized methods and personal fishing style.",
-    image: "/images/rods-technique-specific.png",
+    image: "/images/technique-specific.png",
   },
   {
     title: "Fully Custom",
     text: "Your vision brought to life with complete customization.",
-    image: "/images/rods-fully-custom.png",
+    image: "/images/fully-custom.png",
   },
 ];
 
