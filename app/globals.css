@@ -414,76 +414,25 @@ a {
 
 .rodsHero {
   position: relative;
-  min-height: 650px;
+  min-height: 760px;
   display: flex;
   align-items: center;
-  padding: 150px 70px 80px;
   overflow: hidden;
+  background-image: url("/images/rods-hero-banner.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 .rodsHeroImage {
-  object-fit: cover;
-  object-position: 78% center;
-  z-index: 0;
+  display: none;
 }
 
 .rodsOverlay {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(
-    90deg,
-    #050505 0%,
-    #050505 38%,
-    rgba(0,0,0,.82) 55%,
-    rgba(0,0,0,.28) 100%
-  );
+  display: none;
 }
 
 .rodsHeroContent {
-  position: relative;
-  z-index: 2;
-  max-width: 620px;
-}
-
-.rodsHeroContent span,
-.buildOptions span {
-  color: #c99743;
-  font-weight: 900;
-  letter-spacing: .22em;
-  text-transform: uppercase;
-}
-
-.rodsHeroContent h1 {
-  margin: 0;
-  font-family: Oswald, sans-serif;
-  font-size: 92px;
-  line-height: .94;
-  text-transform: uppercase;
-  letter-spacing: .03em;
-  color: white;
-  text-shadow:
-    0 4px 24px rgba(0,0,0,.65);
-}
-
-.rodsHeroContent p {
-  max-width: 520px;
-  font-size: 22px;
-  line-height: 1.45;
-  color: rgba(255,255,255,.82);
-  margin-top: 28px;
-}
-
-.rodsHeroContent a,
-.rodsCTA a {
-  display: inline-block;
-  margin-top: 32px;
-  background: #c99743;
-  color: black;
-  padding: 18px 32px;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: .16em;
+  display: none;
 }
 
 .rodsCategories {
@@ -558,6 +507,13 @@ a {
   padding: 100px 70px;
 }
 
+.buildOptions span {
+  color: #c99743;
+  font-weight: 900;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+}
+
 .buildOptions h2 {
   font-family: Oswald;
   font-size: 56px;
@@ -591,6 +547,17 @@ a {
   font-size: 60px;
   line-height: 1.04;
   text-transform: uppercase;
+}
+
+.rodsCTA a {
+  display: inline-block;
+  margin-top: 32px;
+  background: #c99743;
+  color: black;
+  padding: 18px 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .16em;
 }
 
 /* MOBILE */
@@ -658,25 +625,8 @@ a {
   }
 
   .rodsHero {
-    padding: 110px 24px 70px;
-    min-height: 540px;
-  }
-
-  .rodsHeroContent h1 {
-  font-size: 58px;
-  line-height: .96;
-}
-
-  .rodsHeroImage {
-    object-position: 72% center;
-  }
-
-  .rodsOverlay {
-    background: linear-gradient(
-      90deg,
-      rgba(0,0,0,.94),
-      rgba(0,0,0,.78)
-    );
+    min-height: 420px;
+    background-position: 62% center;
   }
 
   .rodsWhy h2,
