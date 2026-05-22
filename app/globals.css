@@ -474,21 +474,21 @@ a {
 /* WHY */
 
 .rodsWhy {
-  padding: 90px 24px;
+padding: 90px 24px 40px;
 
-  background: #050505;
+background:#050505;
 
-  text-align: center;
+text-align:center;
 }
 
-.rodsWhy h2 {
-  margin: 0 0 42px;
+.rodsWhy h2{
+margin:0;
 
-  font-family: Oswald;
+font-family:Oswald;
 
-  font-size: 58px;
+font-size:58px;
 
-  text-transform: uppercase;
+text-transform:uppercase;
 }
 
 .whyGrid {
