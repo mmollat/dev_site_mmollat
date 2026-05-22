@@ -29,7 +29,7 @@ const cards = [
     "Explore our lineup of custom rods built for any species and technique.",
     "View Rods",
     "/images/rod-closeup-02.png",
-    "#",
+    "/rods",
   ],
   [
     "The Build Process",
