@@ -57,38 +57,6 @@ const cards = [
 export default function Home() {
   return (
     <main className="site">
-      <header className="nav">
-        <a href="/">
-          <Image
-            src="/images/ibarra-logo.png"
-            alt="Ibarra Custom Rods"
-            width={250}
-            height={90}
-            priority
-          />
-        </a>
-
-        <nav>
-          <a className="active" href="/">
-            Home
-          </a>
-
-          <a href="#rods">Rods</a>
-
-          <a href="#process">Build Process</a>
-
-          <a href="#gallery">Gallery</a>
-
-          <a href="/about">About</a>
-
-          <a href="#contact">Contact</a>
-        </nav>
-
-        <a href="#contact" className="outlineBtn">
-          Build Your Rod
-        </a>
-      </header>
-
       <section className="hero">
         <div className="heroOverlay" />
 
@@ -130,7 +98,7 @@ export default function Home() {
         ))}
       </section>
 
-      <section className="cards" id="rods">
+      <section className="cards">
         {cards.map(([title, text, button, image, link]) => (
           <article
             className="card"
